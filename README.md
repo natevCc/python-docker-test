@@ -8,6 +8,7 @@ Table of contents
   - [Requirements.txt](#requirementstxt)
   - [Docker](#docker)
     - [Run](#run)
+    - [Mount](#mount)
 
 <!-- TOC end -->
 
@@ -71,3 +72,11 @@ Runs the specified image
 ```bash
 docker run -it --name books_app --rm -v "/$(pwd)/data":/home/app_user/app/data nate/python-books
 ```
+
+<!-- TOC --><a name="mount"></a>
+
+### Mount
+
+As seen the mounting set to `-v "/$(pwd)/data":/home/app_user/app/data`. This when is used with git bash for Windows, otherwise it produces some errors.
+
+For Linux, you can just use `-v $(pwd)/data:/home/app_user/app/data`
