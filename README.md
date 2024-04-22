@@ -27,7 +27,7 @@ The script can receive user input, and also take command line parameters.
 
 ## Script
 
-The script uses a dummy web scarping site for testing and practicing:
+The script uses a dummy web scraping site for testing and practicing:
 https://books.toscrape.com/
 
 The script has the following functionality:
